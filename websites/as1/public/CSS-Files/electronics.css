@@ -1,0 +1,73 @@
+@import url('https://stockfont.org/?2a2fa737785a618407ef19d9fc9611a6db7131bb753f53f1b6d96e112be43c32');
+
+* {margin: 0; padding: 0;}
+body {background-color: #DEDEDE; font-family: 'Oxygen-Regular';
+	display: grid;
+  grid-template-columns: 10% 70% 20%;
+    grid-template-rows: auto;
+	grid-template-areas: "header header header"
+	"img img aside"
+	". main aside"
+	"footer footer footer";
+}
+
+h1 { font-family: 'Audiowide', cursive; margin: 0.4em;}
+aside h1 a {color: white;}
+header h1:before {content: "\1F5B3"; font-family: 'hack'; padding-right: 0.4em;}
+header h1 {color: #92B2BF; text-shadow: 2px 2px 2px darkgreen;}
+
+body > section {grid-area: img; height: 20vh; background-position: center center;
+	background-image: url(../banners/1.jpg);
+	max-height: 300px;
+	background-position: center center;}
+header a { color: white; text-decoration: none; }
+
+header address {float: right; color: white; font-style: normal; padding: 1em;}
+main {min-height: 20vh; grid-area: main; padding: 5vw; background-color: #E8E8E8;}
+
+header {background-color: #1C2524; grid-area: header;}
+
+main h1, main a h2 {color: #92B2BF;}
+main a {text-decoration: none;}
+main a h3 {color: #000000; text-decoration: none; font-size: 1.2em;}
+aside {background-color: #2A3F52; min-height: 20px; grid-area: aside; padding: 1vw; color: white;}
+aside ul {list-style-type: none; margin-bottom: 1em;}
+aside li {padding-left: 20px;}
+aside > ul > li {font-size: 2em;}
+aside > ul > li > ul {font-size: 0.5em;}
+aside a {color: #333; text-decoration: none}
+footer {color: white; padding: 1em; background-color: black; font-size: 0.7em; grid-area: footer;}
+
+header { display: grid;  grid-template-columns: 10% 80% 10%;}
+header ul {align-self: center; display: grid; grid-template-columns: auto auto auto; grid-template-rows: auto; color: white; list-style-type: none;}
+header > ul > li {font-size: 2em; cursor: pointer; text-align: center;}
+header ul li ul { margin-left: 10vw; text-align: left; display: none; position: absolute; background-color: #333; padding: 20px;}
+header ul li ul li {padding: 1vw;}
+header ul li:hover ul {display: block;}
+
+h1 {font-weight: bold; margin-bottom: 1em;}
+
+p {margin-top: 0.5em; margin-bottom: 0.5em;}
+
+img { width: 6em; height: 5em; object-fit: contain; margin: 0.5em 1em 1em 2.5em; padding: 1.5em; float:right; border-radius: 2em; background-color: #222222;}
+h2 {margin-top: 0.5em;  margin-bottom: 0.5em;}
+
+form label, form input, form textarea { box-sizing: border-box;  display: block; width: 42%; padding: 2%; margin-left: 1em;}
+form textarea {height: 200px; float: left;}
+form {overflow: auto;}
+input[type="submit"] {width: 60%; display: inline-block; border: 0.1em solid #ccc; border-radius: 1%; box-sizing: border-box; margin-top: 1.2em; margin-bottom: 2em;}
+input[type="text"], input[type="password"] { width: 60%; display: inline-block; border: 0.1em solid #ccc; border-radius: 1%; box-sizing: border-box;}
+select { width: 40%; border: 0.1em solid #ccc; border-radius: 1%; box-sizing: border-box; margin-top: 1em; margin-bottom: 1em; margin-left: 1em; padding: 1em}
+input[type="radio"] { margin-right: 3em; float: right; width: 10%; margin-top: 2em;}
+.error {color: red}
+.success {color: green}
+.products, .reviews {list-style-type: none;}
+.products li, .reviews li {padding: 2em;}
+.products li:nth-child(odd), .reviews li:nth-child(odd) {background-color: #fff;}
+.products li:nth-child(even), .products li:nth-child(even) {background-color: #ddd;}
+
+.price { text-align: right; color: darkgreen; font-family: 'Audiowide'; font-weight: bold; font-size: 2em;}
+
+.reviews .details {text-align: right;}
+
+h4 {margin-top: 1em; margin-bottom: 1em;}
